@@ -1,0 +1,32 @@
+{
+  "id": "easy_08",
+  "difficulty": "easy",
+  "menu": "dishes.json",
+  "days": 7,
+  "meals_per_day": 3,
+  "max_times_per_dish_per_week": 1,
+  "description": "Daily queue-time cap.",
+  "daily": {
+    "price_sgd": [
+      null,
+      20
+    ],
+    "energy_kcal": [
+      1824,
+      2736
+    ],
+    "queue_min": [
+      null,
+      45
+    ]
+  },
+  "objective": {
+    "minimize": {
+      "price_sgd": 0.5,
+      "queue_min": 0.3
+    },
+    "maximize": {
+      "store_rating": 0.2
+    }
+  }
+}

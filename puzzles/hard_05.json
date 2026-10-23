@@ -1,0 +1,68 @@
+{
+  "id": "hard_05",
+  "difficulty": "hard",
+  "menu": "dishes.json",
+  "days": 7,
+  "meals_per_day": 3,
+  "max_times_per_dish_per_week": 1,
+  "description": "High-rated stalls, short queues.",
+  "min_store_rating": 3.6,
+  "daily": {
+    "price_sgd": [
+      null,
+      11.0
+    ],
+    "energy_kcal": [
+      1824,
+      2736
+    ],
+    "protein_g": [
+      55,
+      null
+    ],
+    "sodium_mg": [
+      null,
+      4500
+    ],
+    "sugar_g": [
+      null,
+      57
+    ],
+    "fat_g": [
+      null,
+      100
+    ],
+    "calcium_mg": [
+      200,
+      null
+    ],
+    "queue_min": [
+      null,
+      18
+    ]
+  },
+  "weekly": {
+    "sodium_mg": [
+      null,
+      28000
+    ]
+  },
+  "weekly_presence": {
+    "has_iron": 2,
+    "has_vit_a": 2,
+    "has_vit_d": 2,
+    "has_vit_b12": 2,
+    "has_vit_b6": 2,
+    "has_vit_c": 2,
+    "has_folate": 2
+  },
+  "objective": {
+    "minimize": {
+      "price_sgd": 0.5,
+      "queue_min": 0.3
+    },
+    "maximize": {
+      "store_rating": 0.2
+    }
+  }
+}

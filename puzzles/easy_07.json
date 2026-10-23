@@ -1,0 +1,37 @@
+{
+  "id": "easy_07",
+  "difficulty": "easy",
+  "menu": "dishes.json",
+  "days": 7,
+  "meals_per_day": 3,
+  "max_times_per_dish_per_week": 1,
+  "description": "Every nutrient flag at least once a week.",
+  "daily": {
+    "price_sgd": [
+      null,
+      20
+    ],
+    "energy_kcal": [
+      1824,
+      2736
+    ]
+  },
+  "weekly_presence": {
+    "has_iron": 1,
+    "has_vit_a": 1,
+    "has_vit_d": 1,
+    "has_vit_b12": 1,
+    "has_vit_b6": 1,
+    "has_vit_c": 1,
+    "has_folate": 1
+  },
+  "objective": {
+    "minimize": {
+      "price_sgd": 0.5,
+      "queue_min": 0.3
+    },
+    "maximize": {
+      "store_rating": 0.2
+    }
+  }
+}

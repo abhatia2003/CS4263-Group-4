@@ -1,0 +1,36 @@
+{
+  "id": "easy_06",
+  "difficulty": "easy",
+  "menu": "dishes.json",
+  "days": 7,
+  "meals_per_day": 3,
+  "max_times_per_dish_per_week": 1,
+  "description": "Sugar cap and two weekly nutrient flags.",
+  "daily": {
+    "price_sgd": [
+      null,
+      20
+    ],
+    "energy_kcal": [
+      1824,
+      2736
+    ],
+    "sugar_g": [
+      null,
+      57
+    ]
+  },
+  "weekly_presence": {
+    "has_iron": 1,
+    "has_vit_c": 1
+  },
+  "objective": {
+    "minimize": {
+      "price_sgd": 0.5,
+      "queue_min": 0.3
+    },
+    "maximize": {
+      "store_rating": 0.2
+    }
+  }
+}

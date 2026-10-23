@@ -1,0 +1,67 @@
+{
+  "id": "hard_02",
+  "difficulty": "hard",
+  "menu": "dishes.json",
+  "days": 7,
+  "meals_per_day": 3,
+  "max_times_per_dish_per_week": 1,
+  "description": "High protein, low sodium.",
+  "min_store_rating": 3.5,
+  "daily": {
+    "price_sgd": [
+      null,
+      12.0
+    ],
+    "energy_kcal": [
+      1824,
+      2736
+    ],
+    "protein_g": [
+      125,
+      null
+    ],
+    "sodium_mg": [
+      null,
+      3800
+    ],
+    "sugar_g": [
+      null,
+      57
+    ],
+    "calcium_mg": [
+      200,
+      null
+    ],
+    "queue_min": [
+      null,
+      60
+    ]
+  },
+  "weekly": {
+    "sodium_mg": [
+      null,
+      28000
+    ]
+  },
+  "daily_presence": {
+    "has_vit_b12": 1
+  },
+  "weekly_presence": {
+    "has_iron": 2,
+    "has_vit_a": 2,
+    "has_vit_d": 2,
+    "has_vit_b12": 2,
+    "has_vit_b6": 2,
+    "has_vit_c": 2,
+    "has_folate": 2
+  },
+  "objective": {
+    "minimize": {
+      "price_sgd": 0.5,
+      "queue_min": 0.3
+    },
+    "maximize": {
+      "store_rating": 0.2
+    }
+  }
+}
