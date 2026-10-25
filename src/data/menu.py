@@ -17,3 +17,10 @@ class Menu:
     
     def get_all_dishes(self):
         return self.dishes.values()
+
+    def get_dishes_by_type(self, item_type):
+        res = []
+        for dish in self.dishes.values():
+            if dish.item_type == item_type:
+                res.append(dish)
+        return tuple(res)

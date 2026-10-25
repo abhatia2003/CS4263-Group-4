@@ -23,3 +23,10 @@ class Plan:
         for i in range(num_days):
             res[f'day_{i+1}'] = list(self.days[i])
         return res
+
+    def to_assignment(self, menu): 
+        res = {}
+        for i, row in enumerate(self.days):
+            for j, dish in enumerate(row):
+                res[(i, j)] = menu.get_dish(dish)
+        return res
