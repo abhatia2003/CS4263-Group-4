@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 @dataclass(frozen=True)
-class Dish():
+class Dish:
     dish_id:        str
     dish_name:      str
     stall_id:       str
