@@ -28,11 +28,13 @@ class CSPSolver(Solver):
     
     def backtrack(self, csp, domains, assignment):
         if csp.is_complete(assignment):
-            return assignment
+            return self.on_complete(csp, assignment)
+        if self.should_prune(csp, domains, assignment):
+            return None
         
         next_variable = self.select_next_variable(assignment, csp, domains)
         
-        for value in domains[next_variable]:
+        for value in self.order_values(csp, next_variable, domains):
             assignment[next_variable] = value
             if csp.is_consistent(assignment):
                 inferences = self.inference(csp, next_variable, assignment, domains)
@@ -44,6 +46,15 @@ class CSPSolver(Solver):
                     self.remove_inference(inferences, domains) 
             assignment.pop(next_variable, None) 
         return None
+    
+    def on_complete(self, csp, assignment):
+        return assignment
+
+    def should_prune(self, csp, domains, assignment):
+        return False
+
+    def order_values(self, csp, variable, domains):
+        return domains[variable]
     
     def create_domains(self, csp):
         domains = {}
