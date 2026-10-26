@@ -30,3 +30,19 @@ class Plan:
             for j, dish in enumerate(row):
                 res[(i, j)] = menu.get_dish(dish)
         return res
+    
+    @classmethod
+    def from_assignment(cls, assignment):
+        res = []
+        curr_row = -1
+        for (i, j), dish in sorted(assignment.items()):
+            if i != curr_row:
+                res.append([])
+                curr_row = i
+            res[-1].append(dish.dish_id)
+        res = tuple(tuple(row) for row in res)
+        return cls(res)
+            
+
+    def is_valid(self):
+        return len(self.days) > 0 

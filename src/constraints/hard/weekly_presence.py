@@ -15,4 +15,17 @@ class WeeklyPresence(HardConstraint):
                 if getattr(dish, nutrient) and nutrients_remaining[nutrient] > 0: 
                     nutrients_remaining[nutrient] -= 1
         return not any(nutrients_remaining.values())
-
+    
+    def is_reachable(self, assignment, range_summary, flag_summary):
+        nutrients_remaining = self.nutrients.copy()
+        for variable in self.scope:
+            if variable in assignment:
+                dish = assignment[variable]
+                for nutrient in nutrients_remaining:
+                    if getattr(dish, nutrient) and nutrients_remaining[nutrient] > 0: 
+                        nutrients_remaining[nutrient] -= 1
+            else:
+                for nutrient in nutrients_remaining:
+                    if nutrient in flag_summary[variable] and nutrients_remaining[nutrient] > 0:
+                        nutrients_remaining[nutrient] -= 1
+        return not any(nutrients_remaining.values())

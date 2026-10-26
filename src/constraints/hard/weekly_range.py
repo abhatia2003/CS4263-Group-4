@@ -22,3 +22,18 @@ class WeeklyRange(HardConstraint):
             return total_sum >= self.lower_bound
         return True # Return true if incomplete and total_sum does not exceed upper bound
 
+    def is_reachable(self, assignment, range_summary, flag_summary):
+        min_possible = 0
+        max_possible = 0
+        for variable in self.scope:
+            if variable in assignment:
+                dish = assignment[variable]
+                if min_possible + getattr(dish, self.parameter) > self.upper_bound:
+                    return False
+                min_possible += getattr(dish, self.parameter)
+                max_possible += getattr(dish, self.parameter) 
+            else:
+                min_score, max_score = range_summary[variable][self.parameter]
+                min_possible += min_score
+                max_possible += max_score
+        return min_possible <= self.upper_bound and max_possible >= self.lower_bound

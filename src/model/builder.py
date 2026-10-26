@@ -19,9 +19,15 @@ class Builder:
         
 
     def create_domains(self):
+        min_rating = self.puzzle.min_store_rating
+        eligible = [
+            dish for dish in self.menu.get_all_dishes()
+            if dish.item_type == 'main'
+            and (min_rating is None or dish.store_rating >= min_rating)
+        ]
         domains = {}
-        for variable in self.variables:  
-            domains[variable] = list(self.menu.get_all_dishes()) # May change to set subsequently
+        for variable in self.variables:
+            domains[variable] = list(eligible)
         return domains
     
     def add_hard_constraints(self):

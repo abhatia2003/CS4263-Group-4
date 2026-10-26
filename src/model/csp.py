@@ -1,8 +1,12 @@
+from collections import deque
+
+CONSTRAINT_THRESHOLD = 4
+
 class CSP():
     def __init__(self, variables, domains, constraints):
         self.variables = variables
         self.domains = domains
-        self.constraints = constraints
+        self.constraints = constraints 
     
     def is_complete(self, assignment):
         return len(assignment) == len(self.variables)
@@ -13,4 +17,4 @@ class CSP():
                 return False
         return True
     
-        
+    
