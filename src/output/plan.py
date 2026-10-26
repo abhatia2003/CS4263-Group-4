@@ -33,6 +33,14 @@ class Plan:
     
     @classmethod
     def from_assignment(cls, assignment):
+        slots = {}
+        for variable, value in assignment.items():
+            if isinstance(value, tuple):
+                for meal, dish in enumerate(value):
+                    slots[(variable, meal)] = dish
+            else:
+                slots[variable] = value
+        assignment = slots
         res = []
         curr_row = -1
         for (i, j), dish in sorted(assignment.items()):

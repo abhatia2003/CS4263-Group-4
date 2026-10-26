@@ -1,5 +1,10 @@
 from abc import ABC, abstractmethod
 
+def dishes_of(value):
+        if isinstance(value, tuple):
+            return value
+        return (value,)
+
 class HardConstraint(ABC): 
     def __init__(self, name, scope):
         self.name = name
@@ -12,3 +17,5 @@ class HardConstraint(ABC):
     
     def is_reachable(self, assignment, range_summary, flag_summary):
         return True
+    
+    

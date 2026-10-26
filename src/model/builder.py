@@ -1,7 +1,10 @@
+from collections import Counter
+from itertools import combinations
+
 from .cop import COP
 from .csp import CSP
 from ..constraints.soft.objective import Objective
-from ..constraints.hard import DistinctDishes, DailyRange, DailyPresence, ItemType, StoreRating, WeeklyRange, WeeklyPresence
+from ..constraints.hard import DistinctDishes, DailyRange, DailyPresence, DayOrder, ItemType, StoreRating, WeeklyRange, WeeklyPresence
 
 class Builder:
     
@@ -18,13 +21,16 @@ class Builder:
         self.hard_constraints = self.add_hard_constraints()
         
 
-    def create_domains(self):
+    def eligible_dishes(self):
         min_rating = self.puzzle.min_store_rating
-        eligible = [
+        return [
             dish for dish in self.menu.get_all_dishes()
             if dish.item_type == 'main'
             and (min_rating is None or dish.store_rating >= min_rating)
         ]
+
+    def create_domains(self):
+        eligible = self.eligible_dishes()
         domains = {}
         for variable in self.variables:
             domains[variable] = list(eligible)
@@ -57,3 +63,31 @@ class Builder:
     def build_cop(self):
         return COP(self.variables, self.domains, self.hard_constraints, self.soft_constraints)
     
+    def create_day_triples(self):
+        day_scope = self.daily_scopes[0]
+        daily_constraints = [
+            constraint for constraint in self.hard_constraints
+            if isinstance(constraint, (DailyRange, DailyPresence)) and constraint.scope == day_scope
+        ]
+        eligible = sorted(self.eligible_dishes(), key=lambda dish: dish.dish_id)
+        triples = []
+        for triple in combinations(eligible, self.meals_per_day):
+            assignment = {slot: dish for slot, dish in zip(day_scope, triple)}
+            if all(constraint.relation(assignment) for constraint in daily_constraints):
+                triples.append(triple)
+        usage = Counter(dish for triple in triples for dish in triple)
+        triples.sort(key=lambda triple: sum(usage[dish] for dish in triple))
+        return triples
+
+    def build_day_cop(self):
+        day_variables = tuple(range(self.days))
+        triples = self.create_day_triples()
+        positions = {triple: i for i, triple in enumerate(triples)}
+        domains = {day: list(triples) for day in day_variables}
+        constraints = [DistinctDishes(day_variables, self.puzzle.max_times_per_dish_per_week)]
+        for parameter, bound in self.puzzle.weekly.items():
+            constraints.append(WeeklyRange(day_variables, parameter, bound))
+        constraints.append(WeeklyPresence(day_variables, self.puzzle.weekly_presence))
+        constraints.append(DayOrder(day_variables, positions))
+        objective = Objective.add_soft_constraints(self.puzzle, day_variables)
+        return COP(day_variables, domains, constraints, objective)

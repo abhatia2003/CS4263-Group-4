@@ -1,4 +1,5 @@
 from .soft_constraint import SoftConstraint
+from ..base import dishes_of
 
 class OptimiseConstraint(SoftConstraint):
     def __init__(self, name, scope, attribute, menu, weight, direction):
@@ -30,8 +31,8 @@ class OptimiseConstraint(SoftConstraint):
         accumulated_penalty = 0
         for variable in self.scope: 
             if variable in assignment: 
-                dish = assignment[variable]
-                parameter = getattr(dish, self.attribute)
-                normalised_parameter = self.normalise_param(parameter)
-                accumulated_penalty += self.weight * normalised_parameter
+                for dish in dishes_of(assignment[variable]):
+                    parameter = getattr(dish, self.attribute)
+                    normalised_parameter = self.normalise_param(parameter)
+                    accumulated_penalty += self.weight * normalised_parameter
         return accumulated_penalty

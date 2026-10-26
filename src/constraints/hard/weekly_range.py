@@ -1,4 +1,4 @@
-from src.constraints.base import HardConstraint
+from src.constraints.base import HardConstraint, dishes_of
 
 class WeeklyRange(HardConstraint):
     def __init__(self, scope, parameter, bound):
@@ -12,10 +12,10 @@ class WeeklyRange(HardConstraint):
         all_assigned = True
         for variable in self.scope:
             if variable in assignment:
-                dish = assignment[variable]
-                if total_sum + getattr(dish, self.parameter) > self.upper_bound:
+                value = sum(getattr(dish, self.parameter) for dish in dishes_of(assignment[variable]))
+                if total_sum + value > self.upper_bound:
                     return False
-                total_sum += getattr(dish, self.parameter)
+                total_sum += value
             else:
                 all_assigned = False
         if all_assigned:
@@ -27,11 +27,11 @@ class WeeklyRange(HardConstraint):
         max_possible = 0
         for variable in self.scope:
             if variable in assignment:
-                dish = assignment[variable]
-                if min_possible + getattr(dish, self.parameter) > self.upper_bound:
+                value = sum(getattr(dish, self.parameter) for dish in dishes_of(assignment[variable]))
+                if min_possible + value > self.upper_bound:
                     return False
-                min_possible += getattr(dish, self.parameter)
-                max_possible += getattr(dish, self.parameter) 
+                min_possible += value
+                max_possible += value
             else:
                 min_score, max_score = range_summary[variable][self.parameter]
                 min_possible += min_score

@@ -1,6 +1,7 @@
 from .solver import Solver
 from ..output.plan import Plan
 from ..constraints.hard import DailyPresence, DailyRange, WeeklyPresence, WeeklyRange
+from ..constraints.base import dishes_of
 
 class CSPSolver(Solver):
     def __init__(self):
@@ -94,13 +95,16 @@ class CSPSolver(Solver):
         for variable in unassigned:
             range_summary[variable] = {}
             for attribute in attributes:
-                values = [getattr(dish, attribute) for dish in domains[variable]]
+                values = [sum(getattr(dish, attribute) for dish in dishes_of(value)) for value in domains[variable]]
                 if values:
                     range_summary[variable][attribute] = (min(values), max(values))
                 else:
                     range_summary[variable][attribute] = (float('inf'), float('-inf'))
-            flag_summary[variable] = {flag for flag in flags if any(getattr(dish, flag) for dish in domains[variable])}
-
+            flag_summary[variable] = {}
+            for flag in flags:
+                most = max((sum(getattr(dish, flag) for dish in dishes_of(value)) for value in domains[variable]), default=0)
+                if most > 0:
+                    flag_summary[variable][flag] = most
         for unassigned_var in unassigned:
             for constraint in relevant_constraints:
                 if unassigned_var not in constraint.scope:
