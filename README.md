@@ -55,3 +55,21 @@ Every easy puzzle has a daily budget and a daily energy range, plus at most one 
 | hard_03 | 600 mg calcium on $10 a day |
 | hard_04 | High calcium, fibre and protein, plus three vitamins every day |
 | hard_05 | 18-minute daily queue limit on $11 a day |
+
+# Impossible Puzzles
+
+Each impossible puzzle is an existing hard puzzle with one daily limit tightened just past the point where a valid week exists. Valid single days still exist in every puzzle. What makes them impossible is that the week needs 7 days with no dish used twice.
+
+| Puzzle | Based on | What changed | Bottleneck dishes | Days possible with them | Days possible without them | Max week |
+|---|---|---|---|---|---|---|
+| impossible_01 | hard_01 | Sodium ≤ 2400 mg/day (was 2500) | D065, D066, D083, D092 (Economy Rice combos) | At most 4 (one per dish) | 0 | 4 days |
+| impossible_02 | hard_03 | Calcium ≥ 620 mg/day (was 600) | D081, D107 (Economy Rice with Kailan + Mapo Tofu, 300 mg calcium each) | At most 2 | At most 4 | 6 days |
+| impossible_03 | hard_04 | Fibre ≥ 21 g/day (was 20) | D027 Lontong with Sayur Lodeh (13.2 g), D037 Roti John (11.3 g) | At most 2 | At most 4 | 6 days |
+
+## Why each puzzle is impossible
+
+| Puzzle | Reason |
+|---|---|
+| impossible_01 | All 50 valid days contain at least one of D065, D066, D083 or D092. Each dish can be used only once, so these 4 dishes can cover at most 4 days. |
+| impossible_02 | Reaching 620 mg of calcium on $10 mostly needs one of the two 300 mg dishes, which gives at most 2 days. Without them, at most 4 days can reach 620 mg without sharing a dish. 2 + 4 = 6 < 7. |
+| impossible_03 | Reaching 21 g of fibre under the other hard_04 rules mostly needs one of the two highest-fibre mains, which gives at most 2 days. Without them, at most 4 days work without sharing a dish. 2 + 4 = 6 < 7. |
