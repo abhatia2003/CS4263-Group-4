@@ -1,0 +1,77 @@
+{
+  "id": "impossible_03",
+  "difficulty": "impossible",
+  "menu": "dishes.json",
+  "days": 7,
+  "meals_per_day": 3,
+  "max_times_per_dish_per_week": 1,
+  "description": "hard_04 with fibre raised to 21 g/day: 173 valid days exist, but no 7 of them are dish-disjoint.",
+  "min_store_rating": 3.6,
+  "daily": {
+    "price_sgd": [
+      null,
+      20
+    ],
+    "energy_kcal": [
+      1900,
+      2736
+    ],
+    "protein_g": [
+      85,
+      null
+    ],
+    "sodium_mg": [
+      null,
+      4500
+    ],
+    "sugar_g": [
+      null,
+      50
+    ],
+    "fat_g": [
+      null,
+      105
+    ],
+    "calcium_mg": [
+      600,
+      null
+    ],
+    "fibre_g": [
+      21,
+      null
+    ],
+    "queue_min": [
+      null,
+      54
+    ]
+  },
+  "weekly": {
+    "sodium_mg": [
+      null,
+      28000
+    ]
+  },
+  "daily_presence": {
+    "has_vit_c": 1,
+    "has_folate": 1,
+    "has_vit_d": 1
+  },
+  "weekly_presence": {
+    "has_iron": 3,
+    "has_vit_a": 3,
+    "has_vit_d": 3,
+    "has_vit_b12": 3,
+    "has_vit_b6": 3,
+    "has_vit_c": 3,
+    "has_folate": 3
+  },
+  "objective": {
+    "minimize": {
+      "price_sgd": 0.5,
+      "queue_min": 0.3
+    },
+    "maximize": {
+      "store_rating": 0.2
+    }
+  }
+}

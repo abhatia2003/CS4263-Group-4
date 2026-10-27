@@ -1,0 +1,72 @@
+{
+  "id": "impossible_01",
+  "difficulty": "impossible",
+  "menu": "dishes.json",
+  "days": 7,
+  "meals_per_day": 3,
+  "max_times_per_dish_per_week": 1,
+  "description": "hard_01 with sodium capped at 2400 mg/day: 50 valid days use exactly 21 dishes, but they cannot be split into 7 disjoint days.",
+  "min_store_rating": 3.6,
+  "daily": {
+    "price_sgd": [
+      null,
+      10.0
+    ],
+    "energy_kcal": [
+      1824,
+      2736
+    ],
+    "protein_g": [
+      50.8,
+      null
+    ],
+    "sodium_mg": [
+      null,
+      2400
+    ],
+    "sugar_g": [
+      null,
+      57
+    ],
+    "fat_g": [
+      null,
+      100
+    ],
+    "calcium_mg": [
+      250,
+      null
+    ],
+    "fibre_g": [
+      12,
+      null
+    ],
+    "queue_min": [
+      null,
+      24
+    ]
+  },
+  "weekly": {
+    "sodium_mg": [
+      null,
+      17000
+    ]
+  },
+  "weekly_presence": {
+    "has_iron": 7,
+    "has_vit_a": 7,
+    "has_vit_d": 7,
+    "has_vit_b12": 7,
+    "has_vit_b6": 7,
+    "has_vit_c": 7,
+    "has_folate": 7
+  },
+  "objective": {
+    "minimize": {
+      "price_sgd": 0.5,
+      "queue_min": 0.3
+    },
+    "maximize": {
+      "store_rating": 0.2
+    }
+  }
+}
