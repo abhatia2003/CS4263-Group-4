@@ -1,0 +1,48 @@
+{
+  "id": "hard_04",
+  "eligible_dishes": 82,
+  "branches": 131674,
+  "conflicts": 23210,
+  "status": "OPTIMAL",
+  "solve_time_s": 9.54,
+  "plan": {
+    "day_1": [
+      "D083",
+      "D085",
+      "D037"
+    ],
+    "day_2": [
+      "D106",
+      "D096",
+      "D092"
+    ],
+    "day_3": [
+      "D081",
+      "D024",
+      "D078"
+    ],
+    "day_4": [
+      "D109",
+      "D111",
+      "D088"
+    ],
+    "day_5": [
+      "D107",
+      "D090",
+      "D100"
+    ],
+    "day_6": [
+      "D027",
+      "D066",
+      "D074"
+    ],
+    "day_7": [
+      "D070",
+      "D102",
+      "D104"
+    ]
+  },
+  "penalty": 8.414719,
+  "objective_bound": 8.414717,
+  "validation_failures": []
+}

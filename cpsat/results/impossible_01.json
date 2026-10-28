@@ -1,0 +1,13 @@
+{
+  "id": "impossible_01",
+  "eligible_dishes": 82,
+  "branches": 32210,
+  "conflicts": 9262,
+  "status": "INFEASIBLE",
+  "solve_time_s": 1.91,
+  "plan": null,
+  "penalty": null,
+  "objective_bound": null,
+  "validation_failures": [],
+  "proved_by": "CP-SAT exhaustive search"
+}
