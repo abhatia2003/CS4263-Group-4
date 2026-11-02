@@ -1,0 +1,64 @@
+{
+  "run_id": "easy_05.solution",
+  "puzzle_id": "easy_05",
+  "difficulty": "easy",
+  "expect_feasible": true,
+  "outcome": "valid",
+  "delivered": true,
+  "valid": true,
+  "correct": true,
+  "violation_count": 0,
+  "violation_types": {},
+  "violations": [],
+  "checks": {
+    "known_ids": true,
+    "mains_only": true,
+    "no_repeat": true,
+    "daily:price_sgd": true,
+    "daily:energy_kcal": true,
+    "daily:calcium_mg": true
+  },
+  "soft_penalty": 7.0576,
+  "daily_totals": [
+    {
+      "price_sgd": 11.5,
+      "energy_kcal": 1829.0,
+      "calcium_mg": 300.0
+    },
+    {
+      "price_sgd": 8.7,
+      "energy_kcal": 1876.0,
+      "calcium_mg": 625.0
+    },
+    {
+      "price_sgd": 9.5,
+      "energy_kcal": 1845.0,
+      "calcium_mg": 550.0
+    },
+    {
+      "price_sgd": 9.5,
+      "energy_kcal": 1883.0,
+      "calcium_mg": 625.0
+    },
+    {
+      "price_sgd": 10.3,
+      "energy_kcal": 1826.0,
+      "calcium_mg": 435.0
+    },
+    {
+      "price_sgd": 10.5,
+      "energy_kcal": 1850.0,
+      "calcium_mg": 425.0
+    },
+    {
+      "price_sgd": 10.7,
+      "energy_kcal": 1844.0,
+      "calcium_mg": 520.0
+    }
+  ],
+  "weekly_totals": {},
+  "safeguard": "csp",
+  "csp_status": "SOLVABLE",
+  "time_s": 10.19,
+  "penalty_matches_file": true
+}

@@ -1,0 +1,187 @@
+{
+  "run_id": "impossible_02__llm__run1",
+  "puzzle_id": "impossible_02",
+  "difficulty": "impossible",
+  "expect_feasible": false,
+  "outcome": "invalid",
+  "delivered": true,
+  "valid": false,
+  "correct": false,
+  "violation_count": 10,
+  "violation_types": {
+    "daily:energy_kcal": 3,
+    "daily:price_sgd": 5,
+    "daily:calcium_mg": 2
+  },
+  "violations": [
+    {
+      "type": "daily:energy_kcal",
+      "day": 1,
+      "min": 1824,
+      "max": 2400,
+      "actual": 1411.0
+    },
+    {
+      "type": "daily:energy_kcal",
+      "day": 2,
+      "min": 1824,
+      "max": 2400,
+      "actual": 1425.0
+    },
+    {
+      "type": "daily:price_sgd",
+      "day": 3,
+      "min": null,
+      "max": 10.0,
+      "actual": 10.2
+    },
+    {
+      "type": "daily:calcium_mg",
+      "day": 3,
+      "min": 620,
+      "max": null,
+      "actual": 615.0
+    },
+    {
+      "type": "daily:price_sgd",
+      "day": 4,
+      "min": null,
+      "max": 10.0,
+      "actual": 10.4
+    },
+    {
+      "type": "daily:price_sgd",
+      "day": 5,
+      "min": null,
+      "max": 10.0,
+      "actual": 10.7
+    },
+    {
+      "type": "daily:energy_kcal",
+      "day": 5,
+      "min": 1824,
+      "max": 2400,
+      "actual": 1788.0
+    },
+    {
+      "type": "daily:price_sgd",
+      "day": 6,
+      "min": null,
+      "max": 10.0,
+      "actual": 10.7
+    },
+    {
+      "type": "daily:price_sgd",
+      "day": 7,
+      "min": null,
+      "max": 10.0,
+      "actual": 12.5
+    },
+    {
+      "type": "daily:calcium_mg",
+      "day": 7,
+      "min": 620,
+      "max": null,
+      "actual": 610.0
+    }
+  ],
+  "checks": {
+    "known_ids": true,
+    "mains_only": true,
+    "no_repeat": true,
+    "store_rating": true,
+    "daily:price_sgd": false,
+    "daily:energy_kcal": false,
+    "daily:protein_g": true,
+    "daily:sodium_mg": true,
+    "daily:sugar_g": true,
+    "daily:fat_g": true,
+    "daily:calcium_mg": false,
+    "weekly:sodium_mg": true,
+    "daily_presence:has_vit_c": true,
+    "weekly_presence:has_iron": true,
+    "weekly_presence:has_vit_a": true,
+    "weekly_presence:has_vit_d": true,
+    "weekly_presence:has_vit_b12": true,
+    "weekly_presence:has_vit_b6": true,
+    "weekly_presence:has_vit_c": true,
+    "weekly_presence:has_folate": true
+  },
+  "soft_penalty": null,
+  "daily_totals": [
+    {
+      "price_sgd": 8.1,
+      "energy_kcal": 1411.0,
+      "protein_g": 51.3,
+      "sodium_mg": 2183.0,
+      "sugar_g": 14.0,
+      "fat_g": 55.8,
+      "calcium_mg": 620.0
+    },
+    {
+      "price_sgd": 7.8,
+      "energy_kcal": 1425.0,
+      "protein_g": 51.2,
+      "sodium_mg": 2178.0,
+      "sugar_g": 14.0,
+      "fat_g": 54.5,
+      "calcium_mg": 620.0
+    },
+    {
+      "price_sgd": 10.2,
+      "energy_kcal": 2014.0,
+      "protein_g": 96.3,
+      "sodium_mg": 2829.0,
+      "sugar_g": 30.0,
+      "fat_g": 82.6,
+      "calcium_mg": 615.0
+    },
+    {
+      "price_sgd": 10.4,
+      "energy_kcal": 1896.0,
+      "protein_g": 118.3,
+      "sodium_mg": 2945.0,
+      "sugar_g": 12.0,
+      "fat_g": 70.9,
+      "calcium_mg": 620.0
+    },
+    {
+      "price_sgd": 10.7,
+      "energy_kcal": 1788.0,
+      "protein_g": 112.3,
+      "sodium_mg": 2963.0,
+      "sugar_g": 15.0,
+      "fat_g": 67.8,
+      "calcium_mg": 620.0
+    },
+    {
+      "price_sgd": 10.7,
+      "energy_kcal": 1883.0,
+      "protein_g": 97.7,
+      "sodium_mg": 3023.0,
+      "sugar_g": 14.0,
+      "fat_g": 80.6,
+      "calcium_mg": 620.0
+    },
+    {
+      "price_sgd": 12.5,
+      "energy_kcal": 1912.0,
+      "protein_g": 124.7,
+      "sodium_mg": 3226.0,
+      "sugar_g": 13.0,
+      "fat_g": 76.1,
+      "calcium_mg": 610.0
+    }
+  ],
+  "weekly_totals": {
+    "sodium_mg": 19347.0,
+    "count_has_iron": 12,
+    "count_has_vit_a": 13,
+    "count_has_vit_d": 11,
+    "count_has_vit_b12": 19,
+    "count_has_vit_b6": 16,
+    "count_has_vit_c": 15,
+    "count_has_folate": 21
+  },
+  "safeguard": "llm"
+}

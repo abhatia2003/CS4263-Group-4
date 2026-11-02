@@ -1,0 +1,20 @@
+{
+  "run_id": "impossible_02.solution",
+  "puzzle_id": "impossible_02",
+  "difficulty": "impossible",
+  "expect_feasible": false,
+  "outcome": "declared_infeasible",
+  "delivered": true,
+  "valid": false,
+  "correct": true,
+  "violation_count": 0,
+  "violation_types": {},
+  "violations": [],
+  "checks": {},
+  "soft_penalty": null,
+  "daily_totals": [],
+  "weekly_totals": {},
+  "safeguard": "csp",
+  "csp_status": "UNSOLVABLE",
+  "time_s": 10.17
+}

@@ -1,0 +1,64 @@
+{
+  "run_id": "easy_09.solution",
+  "puzzle_id": "easy_09",
+  "difficulty": "easy",
+  "expect_feasible": true,
+  "outcome": "valid",
+  "delivered": true,
+  "valid": true,
+  "correct": true,
+  "violation_count": 0,
+  "violation_types": {},
+  "violations": [],
+  "checks": {
+    "known_ids": true,
+    "mains_only": true,
+    "no_repeat": true,
+    "daily:price_sgd": true,
+    "daily:energy_kcal": true,
+    "daily:fat_g": true
+  },
+  "soft_penalty": 7.0576,
+  "daily_totals": [
+    {
+      "price_sgd": 11.3,
+      "energy_kcal": 1830.0,
+      "fat_g": 61.1
+    },
+    {
+      "price_sgd": 8.7,
+      "energy_kcal": 1876.0,
+      "fat_g": 75.6
+    },
+    {
+      "price_sgd": 9.7,
+      "energy_kcal": 1844.0,
+      "fat_g": 81.8
+    },
+    {
+      "price_sgd": 9.5,
+      "energy_kcal": 1883.0,
+      "fat_g": 81.5
+    },
+    {
+      "price_sgd": 10.3,
+      "energy_kcal": 1826.0,
+      "fat_g": 66.1
+    },
+    {
+      "price_sgd": 10.5,
+      "energy_kcal": 1850.0,
+      "fat_g": 70.1
+    },
+    {
+      "price_sgd": 10.7,
+      "energy_kcal": 1844.0,
+      "fat_g": 76.3
+    }
+  ],
+  "weekly_totals": {},
+  "safeguard": "csp",
+  "csp_status": "SOLVABLE",
+  "time_s": 10.2,
+  "penalty_matches_file": true
+}

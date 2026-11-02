@@ -1,0 +1,64 @@
+{
+  "run_id": "easy_03.solution",
+  "puzzle_id": "easy_03",
+  "difficulty": "easy",
+  "expect_feasible": true,
+  "outcome": "valid",
+  "delivered": true,
+  "valid": true,
+  "correct": true,
+  "violation_count": 0,
+  "violation_types": {},
+  "violations": [],
+  "checks": {
+    "known_ids": true,
+    "mains_only": true,
+    "no_repeat": true,
+    "daily:price_sgd": true,
+    "daily:energy_kcal": true,
+    "daily:sodium_mg": true
+  },
+  "soft_penalty": 7.0671,
+  "daily_totals": [
+    {
+      "price_sgd": 11.3,
+      "energy_kcal": 1830.0,
+      "sodium_mg": 2692.0
+    },
+    {
+      "price_sgd": 8.7,
+      "energy_kcal": 1876.0,
+      "sodium_mg": 2571.0
+    },
+    {
+      "price_sgd": 9.7,
+      "energy_kcal": 1844.0,
+      "sodium_mg": 3485.0
+    },
+    {
+      "price_sgd": 9.5,
+      "energy_kcal": 1883.0,
+      "sodium_mg": 2571.0
+    },
+    {
+      "price_sgd": 10.3,
+      "energy_kcal": 1826.0,
+      "sodium_mg": 4466.0
+    },
+    {
+      "price_sgd": 10.5,
+      "energy_kcal": 1850.0,
+      "sodium_mg": 3783.0
+    },
+    {
+      "price_sgd": 9.1,
+      "energy_kcal": 1829.0,
+      "sodium_mg": 2916.0
+    }
+  ],
+  "weekly_totals": {},
+  "safeguard": "csp",
+  "csp_status": "SOLVABLE",
+  "time_s": 10.19,
+  "penalty_matches_file": true
+}

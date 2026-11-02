@@ -1,0 +1,164 @@
+{
+  "run_id": "hard_01__llm__run1",
+  "puzzle_id": "hard_01",
+  "difficulty": "hard",
+  "expect_feasible": true,
+  "outcome": "invalid",
+  "delivered": true,
+  "valid": false,
+  "correct": false,
+  "violation_count": 5,
+  "violation_types": {
+    "no_repeat": 3,
+    "daily:energy_kcal": 1,
+    "daily:sodium_mg": 1
+  },
+  "violations": [
+    {
+      "type": "no_repeat",
+      "dish": "D070",
+      "count": 3,
+      "max": 1
+    },
+    {
+      "type": "no_repeat",
+      "dish": "D084",
+      "count": 2,
+      "max": 1
+    },
+    {
+      "type": "no_repeat",
+      "dish": "D091",
+      "count": 2,
+      "max": 1
+    },
+    {
+      "type": "daily:energy_kcal",
+      "day": 5,
+      "min": 1824,
+      "max": 2736,
+      "actual": 1790.0
+    },
+    {
+      "type": "daily:sodium_mg",
+      "day": 5,
+      "min": null,
+      "max": 2500,
+      "actual": 2501.0
+    }
+  ],
+  "checks": {
+    "known_ids": true,
+    "mains_only": true,
+    "no_repeat": false,
+    "store_rating": true,
+    "daily:price_sgd": true,
+    "daily:energy_kcal": false,
+    "daily:protein_g": true,
+    "daily:sodium_mg": false,
+    "daily:sugar_g": true,
+    "daily:fat_g": true,
+    "daily:calcium_mg": true,
+    "daily:fibre_g": true,
+    "daily:queue_min": true,
+    "weekly:sodium_mg": true,
+    "weekly_presence:has_iron": true,
+    "weekly_presence:has_vit_a": true,
+    "weekly_presence:has_vit_d": true,
+    "weekly_presence:has_vit_b12": true,
+    "weekly_presence:has_vit_b6": true,
+    "weekly_presence:has_vit_c": true,
+    "weekly_presence:has_folate": true
+  },
+  "soft_penalty": null,
+  "daily_totals": [
+    {
+      "price_sgd": 9.9,
+      "energy_kcal": 1931.0,
+      "protein_g": 70.3,
+      "sodium_mg": 2289.0,
+      "sugar_g": 46.0,
+      "fat_g": 74.4,
+      "calcium_mg": 470.0,
+      "fibre_g": 14.3,
+      "queue_min": 21.0
+    },
+    {
+      "price_sgd": 9.9,
+      "energy_kcal": 1931.0,
+      "protein_g": 70.3,
+      "sodium_mg": 2289.0,
+      "sugar_g": 46.0,
+      "fat_g": 74.4,
+      "calcium_mg": 470.0,
+      "fibre_g": 14.3,
+      "queue_min": 21.0
+    },
+    {
+      "price_sgd": 9.7,
+      "energy_kcal": 1842.0,
+      "protein_g": 84.1,
+      "sodium_mg": 2267.0,
+      "sugar_g": 27.0,
+      "fat_g": 80.1,
+      "calcium_mg": 555.0,
+      "fibre_g": 21.2,
+      "queue_min": 24.0
+    },
+    {
+      "price_sgd": 10.0,
+      "energy_kcal": 1824.0,
+      "protein_g": 73.2,
+      "sodium_mg": 2490.0,
+      "sugar_g": 29.0,
+      "fat_g": 70.2,
+      "calcium_mg": 475.0,
+      "fibre_g": 15.9,
+      "queue_min": 21.0
+    },
+    {
+      "price_sgd": 9.6,
+      "energy_kcal": 1790.0,
+      "protein_g": 71.1,
+      "sodium_mg": 2501.0,
+      "sugar_g": 31.0,
+      "fat_g": 66.3,
+      "calcium_mg": 415.0,
+      "fibre_g": 15.8,
+      "queue_min": 21.0
+    },
+    {
+      "price_sgd": 10.0,
+      "energy_kcal": 1824.0,
+      "protein_g": 73.2,
+      "sodium_mg": 2490.0,
+      "sugar_g": 29.0,
+      "fat_g": 70.2,
+      "calcium_mg": 475.0,
+      "fibre_g": 15.9,
+      "queue_min": 21.0
+    },
+    {
+      "price_sgd": 10.0,
+      "energy_kcal": 1860.0,
+      "protein_g": 75.7,
+      "sodium_mg": 2481.0,
+      "sugar_g": 29.0,
+      "fat_g": 72.9,
+      "calcium_mg": 415.0,
+      "fibre_g": 14.8,
+      "queue_min": 21.0
+    }
+  ],
+  "weekly_totals": {
+    "sodium_mg": 16807.0,
+    "count_has_iron": 9,
+    "count_has_vit_a": 10,
+    "count_has_vit_d": 10,
+    "count_has_vit_b12": 19,
+    "count_has_vit_b6": 13,
+    "count_has_vit_c": 15,
+    "count_has_folate": 20
+  },
+  "safeguard": "llm"
+}
