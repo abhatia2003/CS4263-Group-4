@@ -4,10 +4,11 @@ from pathlib import Path
 RESULTS_DIR = Path(__file__).resolve().parents[2] / 'results'
 
 
-def write_result(puzzle_id, status, eligible_dishes, solve_time, plan, penalty):
+def write_result(puzzle_id, status, optimal, eligible_dishes, solve_time, plan, penalty):
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
     result = {
         'status': status,
+        'optimal': optimal,
         'eligible_dishes': eligible_dishes,
         'solve_time_s': round(solve_time, 2),
         'plan': plan.parse_plan(),

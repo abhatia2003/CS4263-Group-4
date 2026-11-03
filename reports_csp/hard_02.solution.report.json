@@ -32,8 +32,35 @@
     "weekly_presence:has_vit_c": true,
     "weekly_presence:has_folate": true
   },
-  "soft_penalty": 8.3333,
+  "soft_penalty": 8.2262,
   "daily_totals": [
+    {
+      "price_sgd": 8.9,
+      "energy_kcal": 1954.0,
+      "protein_g": 126.0,
+      "sodium_mg": 3088.0,
+      "sugar_g": 15.0,
+      "calcium_mg": 755.0,
+      "queue_min": 21.0
+    },
+    {
+      "price_sgd": 9.8,
+      "energy_kcal": 1912.0,
+      "protein_g": 126.3,
+      "sodium_mg": 3103.0,
+      "sugar_g": 15.0,
+      "calcium_mg": 755.0,
+      "queue_min": 21.0
+    },
+    {
+      "price_sgd": 10.5,
+      "energy_kcal": 1829.0,
+      "protein_g": 132.4,
+      "sodium_mg": 2943.0,
+      "sugar_g": 13.0,
+      "calcium_mg": 545.0,
+      "queue_min": 21.0
+    },
     {
       "price_sgd": 11.9,
       "energy_kcal": 2189.0,
@@ -44,6 +71,24 @@
       "queue_min": 18.0
     },
     {
+      "price_sgd": 10.7,
+      "energy_kcal": 1828.0,
+      "protein_g": 132.2,
+      "sodium_mg": 2942.0,
+      "sugar_g": 12.0,
+      "calcium_mg": 605.0,
+      "queue_min": 21.0
+    },
+    {
+      "price_sgd": 11.6,
+      "energy_kcal": 1990.0,
+      "protein_g": 126.9,
+      "sodium_mg": 3202.0,
+      "sugar_g": 13.0,
+      "calcium_mg": 550.0,
+      "queue_min": 21.0
+    },
+    {
       "price_sgd": 12.0,
       "energy_kcal": 2079.0,
       "protein_g": 125.8,
@@ -51,65 +96,20 @@
       "sugar_g": 29.0,
       "calcium_mg": 545.0,
       "queue_min": 21.0
-    },
-    {
-      "price_sgd": 11.9,
-      "energy_kcal": 1976.0,
-      "protein_g": 127.0,
-      "sodium_mg": 3207.0,
-      "sugar_g": 13.0,
-      "calcium_mg": 550.0,
-      "queue_min": 21.0
-    },
-    {
-      "price_sgd": 11.9,
-      "energy_kcal": 1976.0,
-      "protein_g": 127.0,
-      "sodium_mg": 3207.0,
-      "sugar_g": 13.0,
-      "calcium_mg": 550.0,
-      "queue_min": 21.0
-    },
-    {
-      "price_sgd": 10.0,
-      "energy_kcal": 1906.0,
-      "protein_g": 129.4,
-      "sodium_mg": 3041.0,
-      "sugar_g": 15.0,
-      "calcium_mg": 770.0,
-      "queue_min": 21.0
-    },
-    {
-      "price_sgd": 9.2,
-      "energy_kcal": 1940.0,
-      "protein_g": 126.1,
-      "sodium_mg": 3093.0,
-      "sugar_g": 15.0,
-      "calcium_mg": 755.0,
-      "queue_min": 21.0
-    },
-    {
-      "price_sgd": 9.4,
-      "energy_kcal": 2011.0,
-      "protein_g": 130.9,
-      "sodium_mg": 3074.0,
-      "sugar_g": 14.0,
-      "calcium_mg": 695.0,
-      "queue_min": 21.0
     }
   ],
   "weekly_totals": {
-    "sodium_mg": 22434.0,
-    "count_has_iron": 16,
+    "sodium_mg": 22090.0,
+    "count_has_iron": 15,
     "count_has_vit_a": 8,
-    "count_has_vit_d": 11,
+    "count_has_vit_d": 10,
     "count_has_vit_b12": 21,
     "count_has_vit_b6": 17,
-    "count_has_vit_c": 11,
+    "count_has_vit_c": 12,
     "count_has_folate": 21
   },
   "safeguard": "csp",
   "csp_status": "SOLVABLE",
-  "time_s": 10.2,
+  "time_s": 6.93,
   "penalty_matches_file": true
 }

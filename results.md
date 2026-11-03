@@ -6,9 +6,9 @@ PASS = valid plan on a feasible puzzle, or 'no solution' on an impossible puzzle
 
 | method | difficulty | runs | delivery_pct | final_pass_pct | false_feasible | false_infeasible | avg_violations | avg_penalty_valid | avg_tokens | avg_time_s |
 |---|---|---|---|---|---|---|---|---|---|---|
-| csp | easy | 10 | 100.00 | 100.00 | 0 | 0 | 0.00 | 6.98 |  | 10.24 |
-| csp | hard | 5 | 100.00 | 100.00 | 0 | 0 | 0.00 | 7.82 |  | 10.16 |
-| csp | impossible | 3 | 100.00 | 100.00 | 0 | 0 |  |  |  | 8.70 |
+| csp | easy | 10 | 100.00 | 100.00 | 0 | 0 | 0.00 | 6.75 |  | 58.23 |
+| csp | hard | 5 | 100.00 | 100.00 | 0 | 0 | 0.00 | 7.75 |  | 11.67 |
+| csp | impossible | 3 | 100.00 | 100.00 | 0 | 0 |  |  |  | 2.96 |
 | llm | hard | 9 | 100.00 | 0.00 | 0 | 0 | 8.33 |  |  |  |
 | llm | impossible | 3 | 100.00 | 0.00 | 3 | 0 | 10.33 |  |  |  |
 | llm_medium | hard | 3 | 100.00 | 0.00 | 0 | 0 | 6.33 |  |  |  |
@@ -17,24 +17,24 @@ PASS = valid plan on a feasible puzzle, or 'no solution' on an impossible puzzle
 
 | puzzle | difficulty | method | run | result | outcome | num_violations | penalty | what_went_wrong |
 |---|---|---|---|---|---|---|---|---|
-| easy_01 | easy | csp | 0 | PASS | valid | 0 | 7.06 |  |
-| easy_02 | easy | csp | 0 | PASS | valid | 0 | 7.06 |  |
-| easy_03 | easy | csp | 0 | PASS | valid | 0 | 7.07 |  |
-| easy_04 | easy | csp | 0 | PASS | valid | 0 | 7.06 |  |
-| easy_05 | easy | csp | 0 | PASS | valid | 0 | 7.06 |  |
-| easy_06 | easy | csp | 0 | PASS | valid | 0 | 7.06 |  |
-| easy_07 | easy | csp | 0 | PASS | valid | 0 | 7.06 |  |
-| easy_08 | easy | csp | 0 | PASS | valid | 0 | 7.06 |  |
-| easy_09 | easy | csp | 0 | PASS | valid | 0 | 7.06 |  |
-| easy_10 | easy | csp | 0 | PASS | valid | 0 | 6.31 |  |
-| hard_01 | hard | csp | 0 | PASS | valid | 0 | 7.76 |  |
+| easy_01 | easy | csp | 0 | PASS | valid | 0 | 6.80 |  |
+| easy_02 | easy | csp | 0 | PASS | valid | 0 | 6.80 |  |
+| easy_03 | easy | csp | 0 | PASS | valid | 0 | 6.82 |  |
+| easy_04 | easy | csp | 0 | PASS | valid | 0 | 6.80 |  |
+| easy_05 | easy | csp | 0 | PASS | valid | 0 | 6.80 |  |
+| easy_06 | easy | csp | 0 | PASS | valid | 0 | 6.80 |  |
+| easy_07 | easy | csp | 0 | PASS | valid | 0 | 6.80 |  |
+| easy_08 | easy | csp | 0 | PASS | valid | 0 | 6.80 |  |
+| easy_09 | easy | csp | 0 | PASS | valid | 0 | 6.80 |  |
+| easy_10 | easy | csp | 0 | PASS | valid | 0 | 6.27 |  |
+| hard_01 | hard | csp | 0 | PASS | valid | 0 | 7.74 |  |
 | hard_01 | hard | llm | 1 | FAIL | invalid | 5 |  | D070 used 3 times (max 1); D084 used 2 times (max 1); D091 used 2 times (max 1); day 5: energy_kcal 1790 is under the min 1824; day 5: sodium_mg 2501 is over the max 2500 |
 | hard_01 | hard | llm | 2 | FAIL | invalid | 13 |  | day 1: price_sgd 10.1 is over the max 10; day 1: sodium_mg 2806 is over the max 2500; day 4: energy_kcal 1635 is under the min 1824; day 4: protein_g 50.3 is under the min 50.8; day 5: price_sgd 11.5 is over the max 10; day 5: sodium_mg 3214 is over the max 2500; day 6: price_sgd 11.2 is over the max 10; day 6: energy_kcal 1808 is under the min 1824; day 6: sodium_mg 2885 is over the max 2500; day 7: price_sgd 11.3 is over the max 10; day 7: energy_kcal 1663 is under the min 1824; day 7: sodium_mg 2953 is over the max 2500; sodium_mg 18984 is over the max 17000 |
 | hard_01 | hard | llm | 3 | FAIL | invalid | 9 |  | day 4: energy_kcal 1744 is under the min 1824; day 5: sodium_mg 3018 is over the max 2500; day 6: price_sgd 10.4 is over the max 10; day 6: energy_kcal 1807 is under the min 1824; day 6: sodium_mg 3019 is over the max 2500; day 7: price_sgd 10.3 is over the max 10; day 7: energy_kcal 1603 is under the min 1824; day 7: sodium_mg 2613 is over the max 2500; sodium_mg 18184 is over the max 17000 |
 | hard_01 | hard | llm_medium | 1 | FAIL | invalid | 6 |  | D064 used 2 times (max 1); day 6: energy_kcal 1674 is under the min 1824; day 6: sodium_mg 2587 is over the max 2500; day 7: price_sgd 10.5 is over the max 10; day 7: sodium_mg 2943 is over the max 2500; sodium_mg 17519 is over the max 17000 |
 | hard_01 | hard | llm_medium | 2 | FAIL | invalid | 5 |  | D065 used 2 times (max 1); D067 used 2 times (max 1); D080 used 2 times (max 1); day 5: price_sgd 10.3 is over the max 10; day 7: energy_kcal 1540 is under the min 1824 |
 | hard_01 | hard | llm_medium | 3 | FAIL | invalid | 8 |  | D067 used 2 times (max 1); day 6: price_sgd 10.3 is over the max 10; day 6: energy_kcal 1599 is under the min 1824; day 6: sodium_mg 2625 is over the max 2500; day 7: price_sgd 10.3 is over the max 10; day 7: energy_kcal 1372 is under the min 1824; sodium_mg 17160 is over the max 17000; has_iron in 6 dishes (need 7) |
-| hard_02 | hard | csp | 0 | PASS | valid | 0 | 8.33 |  |
+| hard_02 | hard | csp | 0 | PASS | valid | 0 | 8.23 |  |
 | hard_03 | hard | csp | 0 | PASS | valid | 0 | 7.48 |  |
 | hard_03 | hard | llm | 1 | FAIL | invalid | 5 |  | day 6: sodium_mg 3821 is over the max 3500; day 6: fat_g 97.6 is over the max 90; day 7: price_sgd 12.3 is over the max 10; day 7: sodium_mg 3549 is over the max 3500; day 7: has_vit_c in 0 dishes (need 1) |
 | hard_03 | hard | llm | 2 | FAIL | invalid | 7 |  | day 5: price_sgd 10.1 is over the max 10; day 6: price_sgd 10.7 is over the max 10; day 6: energy_kcal 1597 is under the min 1824; day 6: calcium_mg 540 is under the min 600; day 7: price_sgd 10.5 is over the max 10; day 7: energy_kcal 1751 is under the min 1824; day 7: calcium_mg 475 is under the min 600 |
@@ -43,7 +43,7 @@ PASS = valid plan on a feasible puzzle, or 'no solution' on an impossible puzzle
 | hard_04 | hard | llm | 1 | FAIL | invalid | 11 |  | D081 used 2 times (max 1); D062 used 2 times (max 1); day 3: fibre_g 19.8 is under the min 20; day 4: fibre_g 17 is under the min 20; day 4: has_vit_d in 0 dishes (need 1); day 5: fibre_g 17.9 is under the min 20; day 6: energy_kcal 1533 is under the min 1900; day 6: calcium_mg 540 is under the min 600; day 6: fibre_g 16.8 is under the min 20; day 7: sodium_mg 4799 is over the max 4500; day 7: fibre_g 19.1 is under the min 20 |
 | hard_04 | hard | llm | 2 | FAIL | invalid | 8 |  | day 5: energy_kcal 1888 is under the min 1900; day 5: calcium_mg 570 is under the min 600; day 6: sodium_mg 4733 is over the max 4500; day 6: calcium_mg 590 is under the min 600; day 6: fibre_g 18 is under the min 20; day 7: energy_kcal 1884 is under the min 1900; day 7: calcium_mg 560 is under the min 600; day 7: fibre_g 16.7 is under the min 20 |
 | hard_04 | hard | llm | 3 | FAIL | invalid | 12 |  | D085 used 2 times (max 1); D109 used 2 times (max 1); D014 used 3 times (max 1); D104 used 3 times (max 1); D078 used 2 times (max 1); day 4: has_vit_d in 0 dishes (need 1); day 5: energy_kcal 1850 is under the min 1900; day 5: fibre_g 19.6 is under the min 20; day 6: energy_kcal 1881 is under the min 1900; day 6: fibre_g 17.2 is under the min 20; day 7: sodium_mg 4577 is over the max 4500; day 7: calcium_mg 560 is under the min 600 |
-| hard_05 | hard | csp | 0 | PASS | valid | 0 | 7.12 |  |
+| hard_05 | hard | csp | 0 | PASS | valid | 0 | 6.89 |  |
 | impossible_01 | impossible | csp | 0 | PASS | declared_infeasible | 0 |  | correctly said no solution |
 | impossible_01 | impossible | llm | 1 | FAIL | invalid | 14 |  | gave a plan for an impossible puzzle |
 | impossible_02 | impossible | csp | 0 | PASS | declared_infeasible | 0 |  | correctly said no solution |

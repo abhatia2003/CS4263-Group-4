@@ -18,47 +18,47 @@
     "daily:energy_kcal": true,
     "daily:sodium_mg": true
   },
-  "soft_penalty": 7.0671,
+  "soft_penalty": 6.8201,
   "daily_totals": [
     {
-      "price_sgd": 11.3,
-      "energy_kcal": 1830.0,
-      "sodium_mg": 2692.0
-    },
-    {
-      "price_sgd": 8.7,
-      "energy_kcal": 1876.0,
-      "sodium_mg": 2571.0
-    },
-    {
-      "price_sgd": 9.7,
-      "energy_kcal": 1844.0,
-      "sodium_mg": 3485.0
-    },
-    {
-      "price_sgd": 9.5,
-      "energy_kcal": 1883.0,
-      "sodium_mg": 2571.0
-    },
-    {
-      "price_sgd": 10.3,
-      "energy_kcal": 1826.0,
-      "sodium_mg": 4466.0
-    },
-    {
       "price_sgd": 10.5,
-      "energy_kcal": 1850.0,
-      "sodium_mg": 3783.0
+      "energy_kcal": 1828.0,
+      "sodium_mg": 4440.0
     },
     {
-      "price_sgd": 9.1,
-      "energy_kcal": 1829.0,
-      "sodium_mg": 2916.0
+      "price_sgd": 8.3,
+      "energy_kcal": 1828.0,
+      "sodium_mg": 2853.0
+    },
+    {
+      "price_sgd": 9.8,
+      "energy_kcal": 1831.0,
+      "sodium_mg": 3491.0
+    },
+    {
+      "price_sgd": 10.0,
+      "energy_kcal": 1825.0,
+      "sodium_mg": 3014.0
+    },
+    {
+      "price_sgd": 10.2,
+      "energy_kcal": 1828.0,
+      "sodium_mg": 3787.0
+    },
+    {
+      "price_sgd": 9.6,
+      "energy_kcal": 1828.0,
+      "sodium_mg": 2649.0
+    },
+    {
+      "price_sgd": 10.0,
+      "energy_kcal": 1824.0,
+      "sodium_mg": 2490.0
     }
   ],
   "weekly_totals": {},
   "safeguard": "csp",
   "csp_status": "SOLVABLE",
-  "time_s": 10.19,
+  "time_s": 39.27,
   "penalty_matches_file": true
 }

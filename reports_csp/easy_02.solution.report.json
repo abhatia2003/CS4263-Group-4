@@ -18,47 +18,47 @@
     "daily:energy_kcal": true,
     "daily:protein_g": true
   },
-  "soft_penalty": 7.0576,
+  "soft_penalty": 6.7987,
   "daily_totals": [
     {
-      "price_sgd": 11.3,
-      "energy_kcal": 1830.0,
-      "protein_g": 51.3
-    },
-    {
-      "price_sgd": 8.7,
-      "energy_kcal": 1876.0,
-      "protein_g": 84.0
-    },
-    {
-      "price_sgd": 9.7,
-      "energy_kcal": 1844.0,
-      "protein_g": 89.3
-    },
-    {
-      "price_sgd": 9.5,
-      "energy_kcal": 1883.0,
-      "protein_g": 86.5
-    },
-    {
-      "price_sgd": 10.3,
-      "energy_kcal": 1826.0,
-      "protein_g": 97.8
-    },
-    {
       "price_sgd": 10.5,
-      "energy_kcal": 1850.0,
-      "protein_g": 76.2
+      "energy_kcal": 1828.0,
+      "protein_g": 76.8
     },
     {
-      "price_sgd": 10.7,
-      "energy_kcal": 1844.0,
-      "protein_g": 100.4
+      "price_sgd": 8.0,
+      "energy_kcal": 1842.0,
+      "protein_g": 100.1
+    },
+    {
+      "price_sgd": 9.8,
+      "energy_kcal": 1831.0,
+      "protein_g": 89.6
+    },
+    {
+      "price_sgd": 10.2,
+      "energy_kcal": 1828.0,
+      "protein_g": 73.6
+    },
+    {
+      "price_sgd": 10.2,
+      "energy_kcal": 1824.0,
+      "protein_g": 66.8
+    },
+    {
+      "price_sgd": 9.8,
+      "energy_kcal": 1825.0,
+      "protein_g": 73.4
+    },
+    {
+      "price_sgd": 11.4,
+      "energy_kcal": 1824.0,
+      "protein_g": 98.1
     }
   ],
   "weekly_totals": {},
   "safeguard": "csp",
   "csp_status": "SOLVABLE",
-  "time_s": 10.19,
+  "time_s": 60.37,
   "penalty_matches_file": true
 }
