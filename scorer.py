@@ -115,7 +115,7 @@ def score(puzzle, menu, run, run_id=""):
 
     expect_feasible = puzzle.get("difficulty") != "impossible" and puzzle.get("feasible") is not False
 
-    checks = {}      # constraint name -> passed?
+    checks = {}     
     violations = []
 
     def check(name, ok, **info):
