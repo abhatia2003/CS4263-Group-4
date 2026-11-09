@@ -27,9 +27,6 @@ input:
 - results/ (csp output) or llm_runs/ (llm output)
 objectivity: does not rely on the CSP code, just checks the constraints and computes the soft penalty
 
-segments:
-- loading -> loads menu and each run, parses the plan into 7x3 days
-- reading the answer -
 """
 import argparse
 import csv
