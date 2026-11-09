@@ -18,40 +18,40 @@
     "daily:price_sgd": true,
     "daily:energy_kcal": true
   },
-  "soft_penalty": 7.0576,
+  "soft_penalty": 6.7987,
   "daily_totals": [
     {
-      "price_sgd": 11.3,
-      "energy_kcal": 1830.0
-    },
-    {
-      "price_sgd": 8.7,
-      "energy_kcal": 1876.0
-    },
-    {
-      "price_sgd": 9.7,
-      "energy_kcal": 1844.0
-    },
-    {
-      "price_sgd": 9.5,
-      "energy_kcal": 1883.0
-    },
-    {
-      "price_sgd": 10.3,
-      "energy_kcal": 1826.0
-    },
-    {
       "price_sgd": 10.5,
-      "energy_kcal": 1850.0
+      "energy_kcal": 1828.0
     },
     {
-      "price_sgd": 10.7,
-      "energy_kcal": 1844.0
+      "price_sgd": 8.0,
+      "energy_kcal": 1842.0
+    },
+    {
+      "price_sgd": 9.8,
+      "energy_kcal": 1831.0
+    },
+    {
+      "price_sgd": 10.2,
+      "energy_kcal": 1828.0
+    },
+    {
+      "price_sgd": 10.2,
+      "energy_kcal": 1824.0
+    },
+    {
+      "price_sgd": 9.8,
+      "energy_kcal": 1825.0
+    },
+    {
+      "price_sgd": 11.4,
+      "energy_kcal": 1824.0
     }
   ],
   "weekly_totals": {},
   "safeguard": "csp",
   "csp_status": "SOLVABLE",
-  "time_s": 10.18,
+  "time_s": 60.28,
   "penalty_matches_file": true
 }

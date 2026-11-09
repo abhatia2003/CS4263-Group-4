@@ -24,48 +24,48 @@
     "weekly_presence:has_vit_c": true,
     "weekly_presence:has_folate": true
   },
-  "soft_penalty": 7.0576,
+  "soft_penalty": 6.7987,
   "daily_totals": [
     {
-      "price_sgd": 11.3,
-      "energy_kcal": 1830.0
-    },
-    {
-      "price_sgd": 8.7,
-      "energy_kcal": 1876.0
-    },
-    {
-      "price_sgd": 9.7,
-      "energy_kcal": 1844.0
-    },
-    {
-      "price_sgd": 9.5,
-      "energy_kcal": 1883.0
-    },
-    {
-      "price_sgd": 10.3,
-      "energy_kcal": 1826.0
-    },
-    {
       "price_sgd": 10.5,
-      "energy_kcal": 1850.0
+      "energy_kcal": 1828.0
     },
     {
-      "price_sgd": 10.7,
-      "energy_kcal": 1844.0
+      "price_sgd": 8.0,
+      "energy_kcal": 1842.0
+    },
+    {
+      "price_sgd": 9.8,
+      "energy_kcal": 1831.0
+    },
+    {
+      "price_sgd": 10.2,
+      "energy_kcal": 1828.0
+    },
+    {
+      "price_sgd": 10.2,
+      "energy_kcal": 1824.0
+    },
+    {
+      "price_sgd": 9.8,
+      "energy_kcal": 1825.0
+    },
+    {
+      "price_sgd": 11.4,
+      "energy_kcal": 1824.0
     }
   ],
   "weekly_totals": {
     "count_has_iron": 9,
     "count_has_vit_a": 14,
     "count_has_vit_d": 12,
-    "count_has_vit_b12": 19,
+    "count_has_vit_b12": 20,
     "count_has_vit_b6": 11,
-    "count_has_vit_c": 14,
+    "count_has_vit_c": 15,
     "count_has_folate": 19
   },
   "safeguard": "csp",
   "csp_status": "SOLVABLE",
-  "time_s": 10.24,
+  "time_s": 60.34,
   "penalty_matches_file": true
 }

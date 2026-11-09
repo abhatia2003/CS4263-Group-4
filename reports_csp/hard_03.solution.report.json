@@ -36,30 +36,21 @@
   "daily_totals": [
     {
       "price_sgd": 10.0,
-      "energy_kcal": 1867.0,
-      "protein_g": 112.9,
-      "sodium_mg": 3017.0,
-      "sugar_g": 13.0,
-      "fat_g": 71.6,
-      "calcium_mg": 605.0
-    },
-    {
-      "price_sgd": 9.8,
-      "energy_kcal": 1869.0,
-      "protein_g": 86.6,
-      "sodium_mg": 2576.0,
-      "sugar_g": 31.0,
-      "fat_g": 82.8,
-      "calcium_mg": 625.0
-    },
-    {
-      "price_sgd": 10.0,
       "energy_kcal": 1830.0,
       "protein_g": 89.4,
       "sodium_mg": 3490.0,
       "sugar_g": 17.0,
       "fat_g": 83.1,
       "calcium_mg": 610.0
+    },
+    {
+      "price_sgd": 9.2,
+      "energy_kcal": 1897.0,
+      "protein_g": 86.4,
+      "sodium_mg": 2566.0,
+      "sugar_g": 31.0,
+      "fat_g": 80.2,
+      "calcium_mg": 625.0
     },
     {
       "price_sgd": 9.9,
@@ -71,21 +62,30 @@
       "calcium_mg": 620.0
     },
     {
-      "price_sgd": 9.5,
-      "energy_kcal": 1883.0,
-      "protein_g": 86.5,
-      "sodium_mg": 2571.0,
-      "sugar_g": 31.0,
-      "fat_g": 81.5,
+      "price_sgd": 10.0,
+      "energy_kcal": 1904.0,
+      "protein_g": 88.9,
+      "sodium_mg": 2566.0,
+      "sugar_g": 30.0,
+      "fat_g": 86.1,
       "calcium_mg": 625.0
     },
     {
-      "price_sgd": 9.9,
-      "energy_kcal": 1916.0,
-      "protein_g": 115.1,
-      "sodium_mg": 3002.0,
-      "sugar_g": 12.0,
-      "fat_g": 73.6,
+      "price_sgd": 10.0,
+      "energy_kcal": 1867.0,
+      "protein_g": 112.9,
+      "sodium_mg": 3017.0,
+      "sugar_g": 13.0,
+      "fat_g": 71.6,
+      "calcium_mg": 605.0
+    },
+    {
+      "price_sgd": 10.0,
+      "energy_kcal": 1867.0,
+      "protein_g": 112.9,
+      "sodium_mg": 3017.0,
+      "sugar_g": 13.0,
+      "fat_g": 71.6,
       "calcium_mg": 605.0
     },
     {
@@ -110,6 +110,6 @@
   },
   "safeguard": "csp",
   "csp_status": "SOLVABLE",
-  "time_s": 10.08,
+  "time_s": 18.85,
   "penalty_matches_file": true
 }

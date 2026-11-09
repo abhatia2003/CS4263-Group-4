@@ -1,7 +1,7 @@
 method,difficulty,runs,delivery_pct,final_pass_pct,false_feasible,false_infeasible,avg_violations,avg_penalty_valid,avg_tokens,avg_time_s
-csp,easy,10,100.0,100.0,0,0,0.0,6.98363,,10.236
-csp,hard,5,100.0,100.0,0,0,0.0,7.82038,,10.162
-csp,impossible,3,100.0,100.0,0,0,,,,8.703333333333333
+csp,easy,10,100.0,100.0,0,0,0.0,6.74826,,58.227
+csp,hard,5,100.0,100.0,0,0,0.0,7.7494,,11.666
+csp,impossible,3,100.0,100.0,0,0,,,,2.9600000000000004
 llm,hard,9,100.0,0.0,0,0,8.333333333333334,,,
 llm,impossible,3,100.0,0.0,3,0,10.333333333333334,,,
 llm_medium,hard,3,100.0,0.0,0,0,6.333333333333333,,,

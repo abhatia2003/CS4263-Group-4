@@ -1,7 +1,8 @@
 {
   "status": "UNSOLVABLE",
+  "optimal": false,
   "eligible_dishes": 82,
-  "solve_time_s": 10.17,
+  "solve_time_s": 7.99,
   "plan": {},
   "penalty": null
 }
